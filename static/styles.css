@@ -1,0 +1,80 @@
+/* this is for p5.js... does not seem to be working!!*/
+canvas {
+  display: block;
+}
+
+/*classes defined here*/
+.body {
+	line-height: 1;
+	font-family: source code pro;
+  background-color: #c4cab9;
+}
+
+.content{
+font-family: source code pro;
+color:black;
+}
+
+/* IDs defnied here*/
+#site-title{
+	padding: 2px;
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: 9px;
+    text-align: right;
+    font-family: source code pro;
+    white-space: pre-line;
+    text-transform: uppercase;
+    font-weight: 1000;
+    color: #225764;
+
+}
+
+#site-description {
+    font-family: 'source code pro';
+    text-align: right;
+    font-weight: 100;
+  }
+
+#site-welcome {
+    font-family: 'source code pro';
+    text-align: right;
+    font-weight: 400;
+  }
+
+#main-menu {
+    font-family: 'source code pro';
+    text-align: right;
+    color:#225764;
+    font-weight: 400;
+  }
+
+#head-container {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    background: rgb(114, 114, 86);
+    float: right;
+  }
+#animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: red;
+  }
+
+a {
+    background-color: #0000;
+    transition: background-color 1s;
+    text-decoration: none;
+    
+}
+
+a:hover {
+   background-color:  #ffb3d9;
+   text-decoration: underline;
+    color: #ffe6ff;
+}
+
+
+

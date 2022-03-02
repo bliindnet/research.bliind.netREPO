@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+        <!-- make page adaptable for mobile devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <!-- http://getbootstrap.com/docs/5.1/ -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- My Custom CSS -->
+        <link href="/static/styles.css" rel="stylesheet">
+
+        <!-- these are the p5.js library files needed -->
+        <script src="/p5.js/libraries/p5.min.js"></script>
+        <script src="/p5.js/libraries/p5.sound.min.js"></script>
+        
+        <title>_research.bliind.net {% block title %}{% endblock %}</title>
+    </head>
+
+    <body class="body">
+        <div id="animation-container-1">
+            <!-- this is a p5.js animation (currnetly not worklon)  -->
+            <script src="/p5.js/sketch.js"></script>
+        </div>
+        <div id="head-container">
+            <!-- My Page Heading CSS -->
+            <h1 id="site-title">_bliind.net</h1>
+            <h4 id="site-description">_{Research}</h4>
+            <p id="site-welcome">
+                The networked live performance research Hub
+            </p>
+        </div>
+        
+        <nav id="main-menu" class="nav">
+            <a href="/"> Home </a> |
+            <a href="/about"> About</a> |
+            <a href="/test-python"> test-python</a> |
+            
+        </nav>
+        
+        <main class="container-fluid py-5 text-center">
+            {% block main %} wooo{% endblock %}
+        </main>
+
+        <div class="bg-secondary my-3 px-5">large margin and padding</div>
+        <div class="bg-primary my-3 px-5">large margin and padding</div>
+        
+        
+        <!-- Bootstrap JS Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
